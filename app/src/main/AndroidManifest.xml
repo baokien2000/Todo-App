@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.todoapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_notes"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_notes_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TodoApp">
+        <activity
+            android:name=".Change_UserPass"
+            android:exported="false"
+            android:label="Đổi mật khẩu"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".SignUp_activity"
+            android:exported="false"
+            android:label="Đăng ký"
+            android:parentActivityName=".Login_activity" />
+        <activity
+            android:name=".Fogot_activity"
+            android:exported="false"
+            android:label="Khôi phục mật khẩu"
+            android:parentActivityName=".Login_activity" />
+        <activity
+            android:name=".Login_activity"
+            android:exported="false"
+            android:label="Đăng nhập"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TaskDoneActivity"
+            android:exported="false"
+            android:label="các nhiệm vụ đã hoàn thành" />
+        <activity
+            android:name=".Setting_Activity"
+            android:exported="false"
+            android:label="Cài đặt"
+            android:noHistory="true" />
+
+        <service
+            android:name=".NotificationService"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".TagManager"
+            android:exported="false"
+            android:label="Quản lý nhãn"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".TrashActivity"
+            android:exported="false"
+            android:label="Thùng rác" />
+        <activity
+            android:name=".add_event"
+            android:exported="true"
+            android:label="Tạo ghi chú" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TaskActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>

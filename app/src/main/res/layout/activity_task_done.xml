@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/TaskDone_LayoutId"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskDoneActivity"
+    android:background="@color/white2"
+    android:weightSum="3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_menu"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_gravity="center"
+            android:contentDescription="@string/search" />
+        <EditText
+            android:id="@+id/TaskDone_SearchID"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="@string/TimKiem"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:minLines="1"
+            android:autofillHints=""
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/NOTFOUND_Task_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="50dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_browser_not_supported_60"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:text="Không tìm thấy nhiệm vụ"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/NOTHING_TASK_DONE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="50dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_browser_not_supported_60"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:text="Không có nhiệm vụ đã hoàn thành"/>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout_Task_done"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/TaskDone_List"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white2"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:divider="@null"
+            android:footerDividersEnabled="false"
+            android:dividerHeight="0dp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

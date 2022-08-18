@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Notes_2"
+        android:title="Notes"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_event_note_44"/>
+    <item
+        android:id="@+id/Tasks_2"
+        android:title="Task"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_check_box_44_onclick"
+        />
+    <item
+        android:id="@+id/Remove_All_2"
+        android:title="Xóa tất cả nhiệm vụ"/>
+    <item android:id="@+id/Tast_Done"
+        android:title="Các ghi chú đã hoàn thành"/>
+
+</menu>

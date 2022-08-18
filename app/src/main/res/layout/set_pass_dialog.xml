@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Đặt mật khẩu"
+        android:textSize="25dp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="Nhập mật khẩu:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/pass_Id"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Xác nhận mật khẩu:"/>
+        <EditText
+            android:id="@+id/Confirm_password_Id"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:singleLine="true"
+
+            android:text=""
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/ShowPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="10dp"
+                android:textSize="10sp"
+                android:text="Ẩn/Hiện mật khẩu"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/PassCancel"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:text="Hủy"
+            android:textColor="@android:color/darker_gray"/>
+        <TextView
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/PassDone"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:text="Tạo mật khẩu"
+            android:textColor="#39cbe4"/>
+    </LinearLayout>
+
+</LinearLayout>

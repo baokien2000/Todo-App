@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_task">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_discount_24"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/Tag_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:hint="Thêm nhãn cho ghi chú"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <TextView
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/TagCancel"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:text="Hủy"
+            android:textColor="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/TagDone"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:text="Hoàn thành"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

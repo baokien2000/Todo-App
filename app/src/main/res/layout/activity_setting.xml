@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting_Activity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:text="Cài đặt"
+        />
+    <LinearLayout
+        android:id="@+id/TextSize_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:clickable="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Cỡ chử"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/Text_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginEnd="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/hintColor"
+            android:text="Vừa"
+            />
+            <ImageView
+                android:id="@+id/TextSizeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_format_size_24"
+                android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Color_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:clickable="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Màu nền ghi chú"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/Color_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginEnd="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/hintColor"
+            android:text="Trắng"
+            />
+        <ImageView
+            android:id="@+id/colorIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_color_lens_24"
+            android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/AppView_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:clickable="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Chế độ xem"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/AppView_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginEnd="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/hintColor"
+            android:text="danh sách"
+            />
+        <ImageView
+            android:id="@+id/Setting_listIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_list_24"
+            android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/AppDeleteDay_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:lines="3"
+            android:text="Thời gian tự động\nxóa trong thùng rác"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/AppDeleteDay_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/hintColor"
+            android:text="30 ngày"
+            />
+        <ImageView
+            android:id="@+id/Setting_DeleteIcon"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

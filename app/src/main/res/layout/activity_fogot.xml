@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fogot_activity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_note_add_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Notes"
+            android:textStyle="bold"
+            android:textColor="#39cbe4"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Khôi phục mật khẩu"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#39cbe4"
+        android:layout_marginBottom="10dip"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"/>
+                <EditText
+                    android:id="@+id/Forgot_TK"
+                    android:layout_width="200dip"
+                    android:layout_height="52dp"
+                    android:hint="Tài khoản"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:maxLength="20"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_privacy_tip_24"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:id="@+id/Forgot_PIN"
+                    android:layout_width="200dip"
+                    android:layout_height="52dp"
+                    android:hint="PIN"
+                    android:maxLength="6"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_lock_24"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:id="@+id/Forgot_MK"
+                    android:layout_width="200dip"
+                    android:layout_height="52dp"
+                    android:hint="Mật khẩu mới"
+                    android:textSize="20sp"
+                    android:maxLength="20"
+                    android:src="@drawable/ic_baseline_lock_24"
+                    android:layout_gravity="center"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_lock_24"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:id="@+id/Forgot_XNTK"
+                    android:layout_width="200dip"
+                    android:layout_height="52dp"
+                    android:maxLength="20"
+                    android:hint="Xác nhận mật khẩu"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    />
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/Forgot_KPMT"
+                android:layout_width="250dip"
+                android:layout_height="40dip"
+                android:textSize="15sp"
+                android:text="Khôi phục mật khẩu"
+                android:background="@drawable/shape">
+            </Button>
+            <LinearLayout
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Forgot_BackId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quay lại"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                    <TextView
+                        android:id="@+id/Show_ForgotPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Ẩn/Hiện mật khẩu"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

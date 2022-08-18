@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Thay đổi mật khẩu"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="Mật khẩu cũ :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/OldPass_Id"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="Mật khẩu mới :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/newPass_Id"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="Xác nhận Mật khẩu:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/Confirm_New_Pass_Id"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/ChangeItemPassShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="10dp"
+                android:textSize="10sp"
+                android:text="Ẩn/Hiện mật khẩu"
+                android:textColor="@color/black"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/ChangeItemPassCancel"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:text="Hủy"
+            android:textColor="@android:color/darker_gray"/>
+        <TextView
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/ChangeItemPassDone"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:text="Xác nhận"
+            android:textColor="#39cbe4"/>
+    </LinearLayout>
+
+</LinearLayout>

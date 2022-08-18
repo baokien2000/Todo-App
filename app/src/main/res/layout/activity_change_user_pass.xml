@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Change_UserPass"
+android:orientation="vertical"
+android:background="@drawable/gradient">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_note_add_24" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Notes"
+        android:textStyle="bold"
+        android:textColor="#39cbe4"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+</LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Đổi mật khẩu"
+    android:textSize="30sp"
+    android:gravity="center"
+    android:textColor="#39cbe4"
+    android:layout_marginBottom="10dip"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_verified_user_25"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"/>
+        <EditText
+            android:id="@+id/Change_Old_MK"
+            android:layout_width="200dip"
+            android:layout_height="52dp"
+            android:hint="Mật khẩu cũ"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_lock_24"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"/>
+        <EditText
+            android:id="@+id/Change_MK"
+            android:layout_width="200dip"
+            android:layout_height="52dp"
+            android:hint="Mật khẩu mới"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_lock_24"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"/>
+        <EditText
+            android:id="@+id/Change_XNMK"
+            android:layout_width="200dip"
+            android:layout_height="52dp"
+            android:hint="Xác nhận mật khẩu"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/Change_BTN"
+        android:layout_width="220dip"
+        android:layout_height="40dip"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:text="Thay đổi"
+        android:background="@drawable/shape">
+    </Button>
+    <LinearLayout
+        android:layout_width="220dip"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp">
+        <TextView
+            android:id="@+id/Change_backID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="quay lại"
+            android:textSize="15sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/Show_ChangePass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Ẩn/Hiện mật khẩu"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

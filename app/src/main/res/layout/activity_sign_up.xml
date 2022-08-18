@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SignUp_activity"
+android:orientation="vertical"
+android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_note_add_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Notes"
+            android:textStyle="bold"
+            android:textColor="#39cbe4"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Đăng ký"
+    android:textSize="30sp"
+    android:gravity="center"
+    android:textColor="#39cbe4"
+    android:layout_marginBottom="10dip"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_person_24"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"/>
+            <EditText
+                android:id="@+id/SignUp_TK"
+                android:layout_width="200dip"
+                android:layout_height="52dp"
+                android:hint="Tài khoản"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_privacy_tip_24"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/SignUp_Pin"
+                android:layout_width="160dip"
+                android:layout_height="52dp"
+                android:hint="PIN"
+                android:maxLines="1"
+                android:inputType="text"
+                android:maxLength="6"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/SentPin"
+                android:layout_width="40dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_height="50dp"
+                android:textColor="#39cbe4"
+                android:text="Tạo"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/SignUp_Mk"
+                android:layout_width="200dip"
+                android:layout_height="52dp"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/SignUp_XNMK"
+                android:layout_width="200dip"
+                android:layout_height="52dp"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:hint="Xác nhận mật khẩu"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/SignUp_Btn"
+            android:layout_width="250dip"
+            android:layout_height="40dip"
+            android:textSize="15sp"
+            android:text="Đăng ký"
+            android:background="@drawable/shape">
+        </Button>
+        <LinearLayout
+            android:layout_width="220dip"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:id="@+id/SignUp_BackId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quay lại"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <TextView
+                    android:id="@+id/Show_SignUpPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Ẩn/Hiện mật khẩu"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Lưu ý:"
+            android:textSize="20sp"
+            android:textColor="@color/hintColor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hintColor"
+            android:text="- Mật khẩu phải có ít nhất 6 kí tự" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hintColor"
+            android:text="- Mật khẩu tốt là mật khẩu có cả chử thường, chử hoa và số"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Mã PIN phải có 6 chữ số"
+            android:textColor="@color/hintColor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Mã PIN dùng để khôi phục trong trường hợp bị mất mật khẩu"
+            android:textColor="@color/hintColor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Mã PIN không thể thay đổi. Hãy đảm báo là bạn nhớ mã PIN của mình"
+            android:textColor="@color/hintColor"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

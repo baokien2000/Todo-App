@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Notes"
+        android:title="Switch"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_event_note_44_onclick"/>
+
+    <item
+            android:id="@+id/Tasks"
+            android:title="Task"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_baseline_check_box_24" />
+
+
+<!--    <item-->
+<!--        android:id="@+id/Item_view"-->
+<!--        android:title="Xem theo ô lưới" />-->
+    <item android:id="@+id/TrashIdMenu"
+        android:title="Thùng rác"/>
+    <item android:id="@+id/TagsManager"
+        android:title="Quản lí nhãn"/>
+    <item android:id="@+id/Notes_Setting"
+        android:title="Cài đặt"/>
+    <item
+        android:id="@+id/Remove_All"
+        android:title="Xóa tất cả ghi chú"/>
+    <item
+        android:id="@+id/Login"
+        android:title="Đăng nhập" />
+    <item
+        android:id="@+id/MenuUser"
+        android:title="Đăng nhập"
+        android:visible="false">
+        <menu>
+            <item android:id="@+id/Change_User_Pass"
+                android:title="Thay đổi mật khẩu" />
+            <item android:id="@+id/Logout"
+                android:title="Đăng xuất" />
+        </menu>
+    </item>
+</menu>
